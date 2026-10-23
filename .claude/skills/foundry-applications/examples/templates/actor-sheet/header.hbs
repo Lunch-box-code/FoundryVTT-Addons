@@ -1,0 +1,6 @@
+{{!-- Part "header". Context comes from SimpleActorSheet#_prepareContext. --}}
+<header class="sheet-header">
+  <img class="profile" src="{{actor.img}}" alt="{{actor.name}}" width="64" height="64">
+  {{!-- formInput renders an input for a DataField; hash keys are forwarded as input config --}}
+  {{formInput nameField value=source.name}}
+</header>

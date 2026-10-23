@@ -1,0 +1,10 @@
+{
+  "__ID__": {
+    "settings": {
+      "enabled": {
+        "name": "Enable __TITLE__",
+        "hint": "Toggle the module's features on or off."
+      }
+    }
+  }
+}

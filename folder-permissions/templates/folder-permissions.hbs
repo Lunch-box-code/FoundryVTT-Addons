@@ -1,0 +1,49 @@
+{{!-- Part "form": the ownership grid and cascade options. --}}
+<div class="fp-body">
+  <p class="hint">{{localize "folder-permissions.Config.Instructions"}}</p>
+
+  <fieldset>
+    <legend>{{localize "folder-permissions.Config.Ownership"}}</legend>
+    <div class="form-group">
+      <label><strong>{{localize "folder-permissions.Config.AllPlayers"}}</strong></label>
+      <div class="form-fields">
+        <select name="ownership.default">
+          {{selectOptions defaultChoices selected=defaultLevel valueAttr="value" labelAttr="label"}}
+        </select>
+      </div>
+    </div>
+    <div class="users">
+      {{#each users}}
+      <div class="form-group">
+        <label>{{name}}</label>
+        <div class="form-fields">
+          <select name="ownership.{{id}}">
+            {{selectOptions @root.userChoices selected=level valueAttr="value" labelAttr="label"}}
+          </select>
+        </div>
+      </div>
+      {{else}}
+      <p class="hint">{{localize "folder-permissions.Config.NoPlayers"}}</p>
+      {{/each}}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>{{localize "folder-permissions.Config.Options"}}</legend>
+    <div class="form-group">
+      <label>{{localize "folder-permissions.Config.IncludeSubfolders"}}</label>
+      <div class="form-fields">
+        <input type="checkbox" name="includeSubfolders" {{checked includeSubfolders}}>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>{{localize "folder-permissions.Config.Remember"}}</label>
+      <div class="form-fields">
+        <input type="checkbox" name="remember" {{checked remember}}>
+      </div>
+      <p class="hint">{{localize "folder-permissions.Config.RememberHint"}}</p>
+    </div>
+  </fieldset>
+
+  <p class="preview"></p>
+</div>

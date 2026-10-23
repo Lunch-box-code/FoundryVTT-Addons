@@ -1,0 +1,49 @@
+{
+  "folder-permissions": {
+    "Menu": {
+      "Configure": "Folder Permissions"
+    },
+    "Marker": "This folder has remembered permissions",
+    "Config": {
+      "Title": "Folder Permissions: {folder}",
+      "Instructions": "Set ownership for everything in this folder. \"No change\" leaves that entry as it is on each document. \"Default\" makes the player fall back to the All Players level.",
+      "Ownership": "Ownership",
+      "AllPlayers": "All Players",
+      "NoPlayers": "There are no player accounts in this world.",
+      "Options": "Options",
+      "IncludeSubfolders": "Apply to all subfolders",
+      "Remember": "Remember for new contents",
+      "RememberHint": "Documents created in, imported into, or moved into this folder (or a subfolder without its own rule) receive these permissions automatically.",
+      "Preview": "Applies to {documents} document(s) in {folders} folder(s).",
+      "Apply": "Apply",
+      "Clear": "Forget Rule"
+    },
+    "Levels": {
+      "NoChange": "No change",
+      "Default": "Default",
+      "None": "None",
+      "Limited": "Limited",
+      "Observer": "Observer",
+      "Owner": "Owner"
+    },
+    "Confirm": {
+      "Title": "Apply Folder Permissions",
+      "Content": "This will change the ownership of {documents} document(s) in {folders} folder(s). Continue?"
+    },
+    "Notify": {
+      "Applied": "Updated {documents} document(s) in \"{folder}\".",
+      "Cleared": "\"{folder}\" no longer passes its permissions to new contents.",
+      "Inherited": "\"{folder}\" was moved: {documents} document(s) inherited their new parent folder's permissions."
+    },
+    "Settings": {
+      "AutoInherit": {
+        "Name": "Automatic inheritance",
+        "Hint": "Documents created in or moved into a folder with remembered permissions receive those permissions."
+      },
+      "ShowMarker": {
+        "Name": "Show folder marker",
+        "Hint": "Show a lock icon in the sidebar next to folders with remembered permissions (GM only)."
+      }
+    }
+  }
+}

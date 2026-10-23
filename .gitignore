@@ -1,0 +1,7 @@
+node_modules/
+*.zip
+# Copy of Foundry's API docs and KB articles (their copyrighted content).
+# Rebuild locally with .claude/skills/foundry-api-reference/scripts/README.md
+.claude/skills/foundry-api-reference/reference/
+# Local Claude Code settings
+.claude/settings.local.json

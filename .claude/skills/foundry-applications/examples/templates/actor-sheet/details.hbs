@@ -1,0 +1,9 @@
+{{!-- Part "details" (a tab). Field names are dot-paths into the Document's update data. --}}
+<section class="tab {{tab.cssClass}}" data-group="sheet" data-tab="details">
+  <div class="form-group stacked">
+    <label for="{{rootId}}-notes">{{localize "my-module.Sheet.Notes"}}</label>
+    <textarea id="{{rootId}}-notes" name="flags.my-module.notes" rows="8" {{disabled (not editable)}}>{{notes}}</textarea>
+  </div>
+  <h3>{{localize "my-module.Sheet.Preview"}}</h3>
+  <div class="notes-preview">{{{enrichedNotes}}}</div>
+</section>

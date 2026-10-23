@@ -1,0 +1,43 @@
+# Release one module from this multi-module repo.
+# Push a tag named <module-id>-v<version>, e.g. folder-permissions-v0.1.0.
+# The workflow checks that <module-id>/module.json has that version, zips the module folder,
+# and creates a GitHub release with module.json and <module-id>.zip attached.
+name: Release module
+on:
+  push:
+    tags: ["*-v*"]
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Parse tag
+        id: tag
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          MODULE="${TAG%-v*}"
+          VERSION="${TAG##*-v}"
+          test -f "$MODULE/module.json" || { echo "No module folder '$MODULE'"; exit 1; }
+          echo "module=$MODULE" >> "$GITHUB_OUTPUT"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+      - name: Check manifest version and download URL
+        run: |
+          M="${{ steps.tag.outputs.module }}/module.json"
+          V=$(jq -r .version "$M")
+          D=$(jq -r .download "$M")
+          [ "$V" = "${{ steps.tag.outputs.version }}" ] || { echo "module.json version $V does not match tag"; exit 1; }
+          case "$D" in *"/${GITHUB_REF_NAME}/"*) ;; *) echo "download URL $D does not point at tag $GITHUB_REF_NAME"; exit 1;; esac
+      - name: Zip module
+        run: |
+          cd "${{ steps.tag.outputs.module }}"
+          zip -r "../${{ steps.tag.outputs.module }}.zip" . -x ".*" -x "*/.*"
+      - name: Create release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" \
+            "${{ steps.tag.outputs.module }}/module.json" \
+            "${{ steps.tag.outputs.module }}.zip" \
+            --title "${{ steps.tag.outputs.module }} ${{ steps.tag.outputs.version }}" --generate-notes

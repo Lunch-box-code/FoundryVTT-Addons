@@ -1,0 +1,11 @@
+{{!-- Part "footer". type="button" on Clear so it does not submit the form. --}}
+<footer class="form-footer">
+  {{#if hasRule}}
+  <button type="button" data-action="clearRule">
+    <i class="fa-solid fa-eraser"></i> {{localize "folder-permissions.Config.Clear"}}
+  </button>
+  {{/if}}
+  <button type="submit">
+    <i class="fa-solid fa-check"></i> {{localize "folder-permissions.Config.Apply"}}
+  </button>
+</footer>

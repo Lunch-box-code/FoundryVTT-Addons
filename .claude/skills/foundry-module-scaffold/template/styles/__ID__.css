@@ -1,0 +1,3 @@
+/* Scope all rules under a module-specific class to avoid clashing with core or other modules. */
+.__ID__ {
+}

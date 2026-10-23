@@ -1,0 +1,9 @@
+/* All rules are scoped to the module's application class. */
+.folder-permissions .fp-body { display: flex; flex-direction: column; gap: 0.5rem; }
+.folder-permissions .users { max-height: 320px; overflow-y: auto; }
+.folder-permissions .preview { font-style: italic; text-align: center; margin: 0; }
+.folder-permissions .form-footer { display: flex; gap: 0.5rem; }
+.folder-permissions .form-footer button { flex: 1; }
+
+/* Marker on sidebar folders that have a remembered rule. */
+.folder-permissions-marker { margin-left: 0.25rem; opacity: 0.8; font-size: 0.85em; }

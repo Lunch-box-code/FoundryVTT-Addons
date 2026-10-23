@@ -1,0 +1,25 @@
+{
+  "my-module": {
+    "SessionNotes": {
+      "Title": "Session Notes",
+      "Open": "Open Session Notes",
+      "Hint": "Shared notes and table mood for this session.",
+      "Notes": "Notes",
+      "Mood": "Table Mood",
+      "Moods": { "calm": "Calm", "tense": "Tense", "chaotic": "Chaotic" },
+      "Tabs": { "notes": "Notes", "settings": "Settings" },
+      "Reset": "Clear Notes",
+      "ResetConfirm": "Clear all session notes?",
+      "Save": "Save",
+      "Saved": "Session notes saved."
+    },
+    "Sheet": {
+      "Label": "Simple Actor Sheet (My Module)",
+      "Tabs": { "details": "Details", "items": "Items" },
+      "Notes": "Notes",
+      "Preview": "Preview",
+      "NoItems": "No items.",
+      "DeleteItem": "Delete Item"
+    }
+  }
+}

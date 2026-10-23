@@ -1,0 +1,54 @@
+{
+  "id": "folder-permissions",
+  "title": "Folder Permissions",
+  "description": "Give folders their own ownership permissions. Changes cascade to every document in the folder and its subfolders, and documents created in or moved into the folder inherit them automatically.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "lunch_box"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "styles": [
+    "styles/folder-permissions.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": false,
+  "relationships": {
+    "systems": [],
+    "requires": [],
+    "recommends": []
+  },
+  "packs": [],
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "hbs",
+        "json"
+      ],
+      "paths": [
+        "styles",
+        "templates",
+        "lang"
+      ]
+    }
+  },
+  "url": "https://github.com/Lunch-box-code/FoundryVTT-Modules/tree/main/folder-permissions",
+  "manifest": "https://raw.githubusercontent.com/Lunch-box-code/FoundryVTT-Modules/main/folder-permissions/module.json",
+  "download": "https://github.com/Lunch-box-code/FoundryVTT-Modules/releases/download/folder-permissions-v0.1.0/folder-permissions.zip",
+  "bugs": "https://github.com/Lunch-box-code/FoundryVTT-Modules/issues",
+  "readme": "README.md"
+}
