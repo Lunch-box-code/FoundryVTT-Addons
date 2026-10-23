@@ -46,9 +46,9 @@
       ]
     }
   },
-  "url": "https://github.com/Lunch-box-code/FoundryVTT-Modules/tree/main/folder-permissions",
-  "manifest": "https://raw.githubusercontent.com/Lunch-box-code/FoundryVTT-Modules/main/folder-permissions/module.json",
-  "download": "https://github.com/Lunch-box-code/FoundryVTT-Modules/releases/download/folder-permissions-v0.1.0/folder-permissions.zip",
-  "bugs": "https://github.com/Lunch-box-code/FoundryVTT-Modules/issues",
+  "url": "https://github.com/Lunch-box-code/FoundryVTT-Addons/tree/main/folder-permissions",
+  "manifest": "https://raw.githubusercontent.com/Lunch-box-code/FoundryVTT-Addons/main/folder-permissions/module.json",
+  "download": "https://github.com/Lunch-box-code/FoundryVTT-Addons/releases/download/folder-permissions-v0.1.0/folder-permissions.zip",
+  "bugs": "https://github.com/Lunch-box-code/FoundryVTT-Addons/issues",
   "readme": "README.md"
 }

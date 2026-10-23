@@ -1,10 +1,10 @@
-# FoundryVTT-Modules
+# FoundryVTT-Addons
 
 Foundry Virtual Tabletop (v14) modules by lunch_box. Each module lives in its own folder.
 
 | Module | Description | Manifest URL |
 |---|---|---|
-| [Folder Permissions](folder-permissions/) | Folder-level ownership that cascades to contents and is inherited by new or moved-in documents | `https://raw.githubusercontent.com/Lunch-box-code/FoundryVTT-Modules/main/folder-permissions/module.json` |
+| [Folder Permissions](folder-permissions/) | Folder-level ownership that cascades to contents and is inherited by new or moved-in documents | `https://raw.githubusercontent.com/Lunch-box-code/FoundryVTT-Addons/main/folder-permissions/module.json` |
 
 ## Releasing a module
 

@@ -14,7 +14,7 @@ It works for actors, items, scenes, journal entries, playlists, roll tables, car
 In Foundry, go to **Add-on Modules → Install Module** and paste this manifest URL:
 
 ```
-https://raw.githubusercontent.com/Lunch-box-code/FoundryVTT-Modules/main/folder-permissions/module.json
+https://raw.githubusercontent.com/Lunch-box-code/FoundryVTT-Addons/main/folder-permissions/module.json
 ```
 
 ## Usage (GM only)
